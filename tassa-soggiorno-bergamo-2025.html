@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tassa di soggiorno 2025 in provincia di Bergamo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* palette BergamoNews */
+    --navy:#00284b; --accent:#eb5c3c; --band:#e9ecf1; --line:#e3e6eb; --muted:#5b687d;
+    --ink:var(--navy); --bar:var(--navy); --hl:var(--accent); --soft:var(--band);
+    --c3:#36597a; --c4:#86a0b8; --c5:#c3d0dc;
+    --font:"Roboto Condensed","Arial Narrow",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#fff;color:var(--navy)}
+  body{font-family:var(--font);font-size:17px;line-height:1.35}
+  .wrap{max-width:720px;margin:0 auto;padding:18px 16px 14px}
+  h1{font-size:1.9rem;line-height:1.1;margin:0 0 .45rem;font-weight:700;letter-spacing:-.01em}
+  .sub{margin:0 0 1rem;color:var(--muted);font-size:1rem}
+  .sub strong{color:var(--navy)}
+  .tabs{display:inline-flex;border:2px solid var(--navy);overflow:hidden;margin-bottom:1rem}
+  .tabs button{font:inherit;font-size:1rem;font-weight:700;padding:.45rem 1rem;border:0;background:#fff;color:var(--navy);cursor:pointer}
+  .tabs button+button{border-left:2px solid var(--navy)}
+  .tabs button[aria-selected="true"]{background:var(--navy);color:#fff}
+  button:focus-visible,input:focus-visible,th button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .opts{display:flex;gap:.4rem;margin:0 0 .8rem;flex-wrap:wrap}
+  .chip{font:inherit;font-size:.95rem;padding:.25rem .8rem;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--navy);cursor:pointer}
+  .chip[aria-pressed="true"]{border-color:var(--navy);background:var(--band);font-weight:700}
+
+  /* classifica */
+  .rows{border-top:4px solid var(--accent)}
+  .row{display:grid;grid-template-columns:1.8rem 10.5rem 1fr 5.6rem;align-items:center;gap:.5rem;padding:.4rem 0;border-bottom:1px solid var(--line)}
+  .rk{color:var(--muted);font-size:.9rem;text-align:right;font-variant-numeric:tabular-nums}
+  .nm{font-size:1.05rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .track{height:16px;background:var(--band)}
+  .fill{height:100%;width:0;background:var(--navy);transition:width .5s ease}
+  .row.cap .fill{background:var(--accent)}
+  .row.cap .nm,.row.cap .vl{font-weight:700}
+  .vl{text-align:right;font-size:1.05rem;font-variant-numeric:tabular-nums}
+  .row.cap .vl{color:var(--accent)}
+
+  /* quota */
+  .lead{font-size:1.25rem;line-height:1.25;margin:0 0 1rem;max-width:56ch;font-weight:700}
+  .stack{display:flex;height:56px;margin-bottom:1rem;border-top:4px solid var(--accent)}
+  .seg{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.1rem;min-width:2px}
+  .seg.dark{color:var(--navy)}
+  .lg{display:grid;grid-template-columns:14px 1fr auto auto;gap:.45rem .7rem;align-items:center;font-size:1.05rem}
+  .sw{width:14px;height:14px}
+  .lg .e,.lg .p{font-variant-numeric:tabular-nums;text-align:right}
+  .lg .p{color:var(--muted);min-width:3.8rem}
+
+  /* tabella */
+  .search{font:inherit;font-size:1rem;width:100%;max-width:300px;padding:.45rem .7rem;border:1px solid var(--line);margin-bottom:.8rem;color:var(--navy)}
+  .tw{overflow-x:auto;max-height:460px;overflow-y:auto;border-top:4px solid var(--accent)}
+  table{width:100%;border-collapse:collapse;font-size:1.05rem}
+  th,td{padding:.6rem .9rem;text-align:left;border-bottom:1px solid var(--line)}
+  th{position:sticky;top:0;background:var(--navy);color:#fff;font-weight:700;white-space:nowrap}
+  th button{font:inherit;font-weight:700;background:none;border:0;padding:0;cursor:pointer;color:#fff}
+  td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+  tbody tr:last-child td{border-bottom:0}
+  tfoot td{font-weight:700;background:var(--band);position:sticky;bottom:0}
+  tfoot td:first-child{box-shadow:inset 4px 0 0 var(--accent)}
+  .empty{padding:1rem;color:var(--muted)}
+
+  .src{margin:1rem 0 0;font-size:.9rem;color:var(--muted);line-height:1.45}
+  [hidden]{display:none!important}
+
+  @media (max-width:520px){
+    h1{font-size:1.6rem}
+    .row{grid-template-columns:1.5rem 1fr 5.4rem;grid-template-areas:"rk nm vl" ". tr tr";row-gap:.2rem;padding:.45rem 0}
+    .rk{grid-area:rk}.nm{grid-area:nm}.vl{grid-area:vl}.track{grid-area:tr}
+    .lg{grid-template-columns:14px 1fr auto}
+    .lg .p{display:none}
+    .lg .e::after{content:attr(data-p);color:var(--muted);margin-left:.5rem}
+  }
+  @media (prefers-reduced-motion:reduce){.fill{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Tassa di soggiorno 2025: quanto incassa ogni Comune bergamasco</h1>
+  <p class="sub">Gettito complessivo in provincia: <strong id="tot"></strong>, in 27 Comuni</p>
+
+  <div class="tabs" role="tablist" aria-label="Scegli il grafico">
+    <button role="tab" id="t-rank" aria-selected="true" aria-controls="p-rank">Classifica</button>
+    <button role="tab" id="t-share" aria-selected="false" aria-controls="p-share">Quota</button>
+    <button role="tab" id="t-table" aria-selected="false" aria-controls="p-table">Tabella</button>
+  </div>
+
+  <section id="p-rank" role="tabpanel" aria-labelledby="t-rank">
+    <div class="opts" role="group" aria-label="Scala del grafico">
+      <button class="chip" id="o-all" aria-pressed="true">Tutti i Comuni</button>
+      <button class="chip" id="o-nobg" aria-pressed="false">Senza Bergamo</button>
+    </div>
+    <div class="rows" id="rows"></div>
+  </section>
+
+  <section id="p-share" role="tabpanel" aria-labelledby="t-share" hidden>
+    <p class="lead" id="lead"></p>
+    <div class="stack" id="stack" role="img" aria-label="Ripartizione del gettito provinciale"></div>
+    <div class="lg" id="lg"></div>
+  </section>
+
+  <section id="p-table" role="tabpanel" aria-labelledby="t-table" hidden>
+    <input class="search" id="q" type="search" placeholder="Cerca un Comune" aria-label="Cerca un Comune">
+    <div class="tw">
+      <table>
+        <thead><tr>
+          <th scope="col"><button data-k="name">Comune</button></th>
+          <th scope="col" class="n"><button data-k="val">Gettito</button></th>
+          <th scope="col" class="n"><button data-k="pct">Quota</button></th>
+        </tr></thead>
+        <tbody id="tb"></tbody>
+        <tfoot id="tf"></tfoot>
+      </table>
+    </div>
+    <div class="empty" id="none" hidden>Nessun Comune trovato.</div>
+  </section>
+
+  <p class="src">Fonte: Centro studi Federalberghi e Dipartimento Memotef dell'Università La Sapienza di Roma, su rilevazioni Siope e rendiconti degli enti locali. Dati 2025: imposta di soggiorno, contributo di soggiorno e contributo di sbarco. Il gettito non misura direttamente le presenze: dipende anche da tariffe, esenzioni e numero di Comuni che applicano l'imposta.</p>
+</div>
+
+<script>
+(function(){
+  var DATA=[
+    ["Bergamo",3716934.43],["Orio al Serio",300731.50],["Stezzano",144512.78],["Grassobbio",94045.75],
+    ["Mozzo",80837.60],["Castione della Presolana",80483.00],["Lovere",79464.00],["San Pellegrino Terme",77358.00],
+    ["Selvino",72115.00],["Sarnico",64283.00],["Riva di Solto",47333.00],["Clusone",26151.50],
+    ["Albino",21653.30],["Predore",21348.50],["Castro",16194.00],["Schilpario",14763.50],
+    ["Costa Volpino",12849.01],["Nembro",12681.00],["Solto Collina",12256.88],["Bossico",11168.00],
+    ["Cologno al Serio",10839.98],["Azzano San Paolo",8266.00],["Foppolo",7138.00],["Serina",7054.00],
+    ["Zanica",6284.71],["Colere",5329.00],["Torre Pallavicina",3063.00]
+  ];
+  var TOTAL=4955138.44;
+  var eur=new Intl.NumberFormat("it-IT",{maximumFractionDigits:0});
+  var pc=new Intl.NumberFormat("it-IT",{minimumFractionDigits:1,maximumFractionDigits:1});
+  function E(v){return eur.format(Math.round(v))+" €"}
+  function P(v){return pc.format(v/TOTAL*100)+"%"}
+  function $(id){return document.getElementById(id)}
+
+  $("tot").textContent=E(TOTAL);
+
+  /* altezza per iframe */
+  function sendH(){
+    try{parent.postMessage({type:"bn-resize",id:"tassa-soggiorno-2025",height:document.documentElement.scrollHeight},"*")}catch(e){}
+  }
+
+  /* tab */
+  var tabs=["rank","share","table"];
+  function showTab(n){
+    tabs.forEach(function(t){
+      var on=t===n;
+      $("t-"+t).setAttribute("aria-selected",on);
+      $("p-"+t).hidden=!on;
+    });
+    if(n==="rank")drawRank();
+    sendH();
+  }
+  tabs.forEach(function(t){$("t-"+t).addEventListener("click",function(){showTab(t)})});
+
+  /* classifica */
+  var withBg=true;
+  function drawRank(){
+    var list=DATA.map(function(d,i){return{n:d[0],v:d[1],r:i+1}});
+    if(!withBg)list=list.filter(function(d){return d.n!=="Bergamo"});
+    var max=list[0].v,h="";
+    list.forEach(function(d){
+      h+='<div class="row'+(d.n==="Bergamo"?' cap':'')+'"><span class="rk">'+d.r+'</span><span class="nm" title="'+d.n+'">'+d.n+
+         '</span><div class="track"><div class="fill" data-w="'+(d.v/max*100).toFixed(2)+'"></div></div><span class="vl">'+E(d.v)+'</span></div>';
+    });
+    $("rows").innerHTML=h;
+    requestAnimationFrame(function(){requestAnimationFrame(function(){
+      document.querySelectorAll(".fill").forEach(function(f){f.style.width=f.getAttribute("data-w")+"%"});
+    })});
+    sendH();
+  }
+  $("o-all").addEventListener("click",function(){withBg=true;$("o-all").setAttribute("aria-pressed",true);$("o-nobg").setAttribute("aria-pressed",false);drawRank()});
+  $("o-nobg").addEventListener("click",function(){withBg=false;$("o-all").setAttribute("aria-pressed",false);$("o-nobg").setAttribute("aria-pressed",true);drawRank()});
+
+  /* quota */
+  (function(){
+    var top=DATA.slice(0,4),rest=DATA.slice(4).reduce(function(a,d){return a+d[1]},0);
+    var parts=top.map(function(d){return{n:d[0],v:d[1]}}).concat([{n:"Altri "+(DATA.length-4)+" Comuni",v:rest}]);
+    var cols=["var(--hl)","var(--bar)","var(--c3)","var(--c4)","var(--c5)"];
+    var dark=[false,false,false,true,true];
+    $("lead").textContent="Bergamo vale "+P(DATA[0][1])+" del gettito provinciale: "+E(DATA[0][1])+" su "+E(TOTAL)+".";
+    var s="",l="";
+    parts.forEach(function(p,i){
+      var w=p.v/TOTAL*100;
+      s+='<div class="seg'+(dark[i]?' dark':'')+'" style="width:'+w+'%;background:'+cols[i]+'" title="'+p.n+': '+E(p.v)+'">'+(w>8?pc.format(w)+"%":"")+'</div>';
+      l+='<span class="sw" style="background:'+cols[i]+'"></span><span>'+p.n+'</span><span class="e" data-p="'+P(p.v)+'">'+E(p.v)+'</span><span class="p">'+P(p.v)+'</span>';
+    });
+    $("stack").innerHTML=s;$("lg").innerHTML=l;
+  })();
+
+  /* tabella */
+  var sk="val",sd=-1;
+  function drawTable(){
+    var q=$("q").value.trim().toLowerCase();
+    var rows=DATA.map(function(d){return{n:d[0],v:d[1]}}).filter(function(d){return d.n.toLowerCase().indexOf(q)>-1});
+    rows.sort(function(a,b){
+      if(sk==="name")return sd*a.n.localeCompare(b.n,"it");
+      return sd*(a.v-b.v);
+    });
+    var h="";
+    rows.forEach(function(d){h+="<tr><td>"+d.n+'</td><td class="n">'+E(d.v)+'</td><td class="n">'+P(d.v)+"</td></tr>"});
+    $("tb").innerHTML=h;
+    $("none").hidden=rows.length>0;
+    $("tf").innerHTML=q?"":'<tr><td>Totale provincia</td><td class="n">'+E(TOTAL)+'</td><td class="n">100%</td></tr>';
+    sendH();
+  }
+  document.querySelectorAll("th button").forEach(function(b){
+    b.addEventListener("click",function(){
+      var k=b.getAttribute("data-k");if(k==="pct")k="val";
+      if(sk===k)sd=-sd;else{sk=k;sd=k==="name"?1:-1}
+      drawTable();
+    });
+  });
+  $("q").addEventListener("input",drawTable);
+
+  drawRank();drawTable();
+  window.addEventListener("resize",sendH);
+  window.addEventListener("load",sendH);
+})();
+</script>
+</body>
+</html>
